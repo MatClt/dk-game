@@ -3,7 +3,10 @@ from pygame.locals import *
 import time
 import math
 from plateau import *
+from config import*
 pygame.init()
+
+image = get_image("test")
 
 def timer(depart):
     if depart == 0:
@@ -149,27 +152,27 @@ def verif (x,y,m_x,m_y):
 resolution = (800,840)
 ecran = pygame.display.set_mode(resolution)
 pygame.display.set_caption('DK')
-fond = pygame.image.load("fond.jpg")
-icone = pygame.image.load("icone.jpg")
+fond = pygame.image.load(get_image("fond.jpg"))
+icone = pygame.image.load(get_image("icone.jpg"))
 pygame.display.set_icon(icone)
 ecran.blit(pygame.transform.scale(fond, resolution), (0, 0))
 
 # Chargement images
-mur = pygame.image.load("mur.png")
-start = pygame.image.load("depart.png")
-perso_bas = pygame.image.load("dk_bas.png")
-perso_haut = pygame.image.load("dk_haut.png")
-perso_gauche = pygame.image.load("dk_gauche.png")
-perso_droite = pygame.image.load("dk_droite.png")
-arriveD = pygame.image.load("arrivee.png")
-arriveM = pygame.image.load("champi.jpg.png")
-b_bouton = pygame.image.load("bouton.png")
-echelle = pygame.image.load("echelle.png")
-accueil = pygame.image.load("accueil.png")
-mario = pygame.image.load("mario.jpg.png")
-mario_ht_bs= pygame.image.load("mario_ht_bs.jpg.png")
-mario_drt = pygame.image.load("mario_drt.jpg.png")
-mario_gch = pygame.image.load("mario_gch.png")
+mur = pygame.image.load(get_image("mur.png"))
+start = pygame.image.load(get_image("depart.png"))
+perso_bas = pygame.image.load(get_image("dk_bas.png"))
+perso_haut = pygame.image.load(get_image("dk_haut.png"))
+perso_gauche = pygame.image.load(get_image("dk_gauche.png"))
+perso_droite = pygame.image.load(get_image("dk_droite.png"))
+arriveD = pygame.image.load(get_image("arrivee.png"))
+arriveM = pygame.image.load(get_image("champi.jpg.png"))
+b_bouton = pygame.image.load(get_image("bouton.png"))
+echelle = pygame.image.load(get_image("echelle.png"))
+accueil = pygame.image.load(get_image("accueil.png"))
+mario = pygame.image.load(get_image("mario.jpg.png"))
+mario_ht_bs= pygame.image.load(get_image("mario_ht_bs.jpg.png"))
+mario_drt = pygame.image.load(get_image("mario_drt.jpg.png"))
+mario_gch = pygame.image.load(get_image("mario_gch.png"))
 
 
 #Déclaration des variables
